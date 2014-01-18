@@ -1,0 +1,28 @@
+html:
+
+  head:
+    title: Markup made easy
+    
+  body:
+    include:
+      header.html
+
+    h1: Markup!
+    p: omg
+    p:
+    p:
+
+    div#content.row(width: 100):
+      Main content goes here!
+
+    link(to: http://google.com):
+      Go to Google!
+
+    ul:
+      li: home
+      li: about
+      li: contact
+
+  form(action: /submit method: POST):
+    input#name(type: text placeholder: please enter your name):
+    input(type: submit):
