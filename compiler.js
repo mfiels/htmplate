@@ -315,6 +315,8 @@ Compiler.prototype._parseProps = function(line) {
       while (parenContents[i] == ' ') {
         i++;
       }
+      
+      i--;
     }
   }
 
@@ -322,7 +324,7 @@ Compiler.prototype._parseProps = function(line) {
 };
 
 var fs = require('fs');
-var fileBuffer = fs.readFileSync('test.tmpl').toString('ascii');
+var fileBuffer = fs.readFileSync('example.htmplate').toString('ascii');
 var content = fileBuffer.toString('ascii');
 
 var SPACES_PER_TAB = 2;
